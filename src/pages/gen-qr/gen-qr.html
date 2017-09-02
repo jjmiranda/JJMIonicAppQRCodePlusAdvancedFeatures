@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My First JJM APP</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3>Generador de QR</h3>
+
+  <p>
+    Aquí va el QR CODE Generado
+  </p>
+  <p>
+    <img src="{{dataqr}}" width="240" height="240"/>
+  </p>
+  <p>
+    <img id="qrcodetag" #qrcodetag src="" width="120" height="120"/>
+  </p>
+  <p>
+    <button ion-button color="primary" (click)="generaQR()">Genera Codigo</button>
+  </p>
+  <ion-row>
+    <ion-col>
+      <button ion-button color="primary" (click)="badgePen(-1)">Menos</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button color="primary" (click)="badgePen(5)">Set 5</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button color="primary" (click)="badgePen(1)">Mas</button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

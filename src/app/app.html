@@ -1,8 +1,10 @@
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
 <ion-menu [content]="content">
 
   <ion-header>
     <ion-toolbar>
-      <ion-title>Pages</ion-title>
+      <ion-title>Pages id:{{uniqueID}}</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -15,5 +17,3 @@
   </ion-content>
 
 </ion-menu>
-
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

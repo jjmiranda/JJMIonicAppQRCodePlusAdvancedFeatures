@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My First JJM APP</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3>Lector de QR</h3>
+
+  <p>
+    El UUID de este dispositivo en específico es: {{uuidnum}}
+  </p>
+  <p>
+    Texto escaneado: {{text_read}} - {{format}}
+  </p>
+  <p>
+    <button ion-button color="primary" (click)="scaneaCodigo($event)">Scanea Codigo</button>
+  </p>
+
+</ion-content>
